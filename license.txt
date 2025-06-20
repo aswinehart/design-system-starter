@@ -1,0 +1,21 @@
+Copyright © 2025 Ashley Swinehart. All rights reserved.
+
+This software and associated materials (the “Software”) are the intellectual property of Ashley Swinehart and are licensed, not sold.
+
+Permission is hereby granted to the original purchaser (“Licensee”) to use the Software for internal business or personal purposes only.
+
+Restrictions:
+- The Licensee may not copy, modify, distribute, sublicense, sell, or lease any part of the Software.
+- The Licensee may not incorporate the Software into any product or service intended for resale or public distribution without prior written permission.
+- The Software may not be shared with or transferred to any third party.
+
+This license is non-transferable and non-exclusive. Any attempt to violate or circumvent these restrictions will result in immediate termination of the license and may result in legal action.
+
+NO WARRANTY:
+This Software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement.
+
+LIMITATION OF LIABILITY:
+In no event shall Ashley Swinehart be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from or in connection with the Software.
+
+For licensing inquiries or extended use rights, contact: ash.swinehart.dev@gmail.com
+
