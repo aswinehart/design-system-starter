@@ -1,0 +1,14 @@
+{
+  "name": "design-system-starter",
+  "private": true,
+  "packageManager": "pnpm@11.13.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "pnpm install",
+    "build": "pnpm -r run build",
+    "clean": "rimraf node_modules .pnpm pnpm-lock.yaml",
+    "lint": "pnpm -r run lint"
+  }
+}

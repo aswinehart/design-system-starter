@@ -1,0 +1,19 @@
+{
+  "name": "@design-system/design-tokens",
+  "version": "0.0.0",
+  "private": false,
+  "main": "src/index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./src/index.js"
+    }
+  }
+  ,
+  "scripts": {
+    "build": "node build-tokens.cjs"
+  },
+  "devDependencies": {
+    "style-dictionary": "^4.0.0"
+  }
+}

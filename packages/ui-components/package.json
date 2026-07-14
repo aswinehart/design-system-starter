@@ -1,0 +1,15 @@
+{
+  "name": "@design-system/ui-components",
+  "version": "0.0.0",
+  "private": false,
+  "main": "src/index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./src/index.js"
+    }
+  },
+  "dependencies": {
+    "@design-system/design-tokens": "workspace:^"
+  }
+}

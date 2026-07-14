@@ -1,0 +1,74 @@
+{
+  "color": {
+    "primary": { "value": "#0B5FFF" },
+    "onPrimary": { "value": "#FFFFFF" },
+    "secondary": { "value": "#00B8D9" },
+    "success": { "value": "#16A34A" },
+    "warning": { "value": "#F59E0B" },
+    "danger": { "value": "#DC2626" },
+    "background": { "value": "#FFFFFF" },
+    "surface": { "value": "#F7F9FC" },
+    "border": { "value": "#D6E4FF" },
+    "textPrimary": { "value": "#0F172A" },
+    "textSecondary": { "value": "#475569" }
+  },
+  "spacing": {
+    "xxs": { "value": "0.25rem" },
+    "xs": { "value": "0.5rem" },
+    "sm": { "value": "0.75rem" },
+    "md": { "value": "1rem" },
+    "lg": { "value": "1.5rem" },
+    "xl": { "value": "2rem" },
+    "xxl": { "value": "3rem" }
+  },
+  "border": {
+    "radius": {
+      "small": { "value": "4px" },
+      "medium": { "value": "8px" },
+      "large": { "value": "16px" }
+    },
+    "width": {
+      "thin": { "value": "1px" },
+      "standard": { "value": "1.5px" },
+      "thick": { "value": "2px" }
+    }
+  },
+  "shadow": {
+    "low": { "value": "0 1px 2px rgba(15, 23, 42, 0.08)" },
+    "medium": { "value": "0 4px 10px rgba(15, 23, 42, 0.12)" },
+    "high": { "value": "0 12px 40px rgba(15, 23, 42, 0.16)" }
+  },
+  "elevation": {
+    "card": { "value": "0 1px 2px rgba(15, 23, 42, 0.08), 0 1px 3px rgba(15, 23, 42, 0.04)" },
+    "popover": { "value": "0 6px 16px rgba(15, 23, 42, 0.12)" },
+    "modal": { "value": "0 18px 60px rgba(15, 23, 42, 0.18)" }
+  },
+  "typography": {
+    "fontFamily": {
+      "primary": { "value": "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" },
+      "code": { "value": "Menlo, Monaco, Consolas, 'Courier New', monospace" }
+    },
+    "fontSize": {
+      "xs": { "value": "0.75rem" },
+      "sm": { "value": "0.875rem" },
+      "md": { "value": "1rem" },
+      "lg": { "value": "1.125rem" },
+      "xl": { "value": "1.25rem" },
+      "xxl": { "value": "1.5rem" }
+    },
+    "lineHeight": {
+      "tight": { "value": "1.2" },
+      "normal": { "value": "1.5" },
+      "loose": { "value": "1.75" }
+    },
+    "fontWeight": {
+      "regular": { "value": "400" },
+      "medium": { "value": "500" },
+      "bold": { "value": "700" }
+    },
+    "letterSpacing": {
+      "normal": { "value": "0" },
+      "wide": { "value": "0.02em" }
+    }
+  }
+}
