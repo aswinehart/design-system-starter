@@ -1,7 +1,7 @@
 {
   "name": "design-system-starter",
   "private": true,
-  "packageManager": "pnpm@11.13.0",
+  "packageManager": "pnpm@11.15.1",
   "workspaces": [
     "packages/*"
   ],

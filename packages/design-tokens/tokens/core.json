@@ -39,9 +39,13 @@
     "high": { "value": "0 12px 40px rgba(15, 23, 42, 0.16)" }
   },
   "elevation": {
-    "card": { "value": "0 1px 2px rgba(15, 23, 42, 0.08), 0 1px 3px rgba(15, 23, 42, 0.04)" },
-    "popover": { "value": "0 6px 16px rgba(15, 23, 42, 0.12)" },
-    "modal": { "value": "0 18px 60px rgba(15, 23, 42, 0.18)" }
+    "dropdown": { "value": "1000" },
+    "sticky": { "value": "1020" },
+    "fixed": { "value": "1030" },
+    "modalBackdrop": { "value": "1040" },
+    "modal": { "value": "1050" },
+    "popover": { "value": "1060" },
+    "tooltip": { "value": "1070" }
   },
   "typography": {
     "fontFamily": {
