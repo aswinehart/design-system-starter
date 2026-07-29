@@ -1,0 +1,12 @@
+node_modules
+.pnpm
+dist
+storybook-static
+**/node_modules
+**/.pnp*
+**/dist
+**/.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+coverage

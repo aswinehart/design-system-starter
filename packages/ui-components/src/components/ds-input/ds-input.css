@@ -1,0 +1,2 @@
+.ds-input{padding:0.5rem;border:1px solid var(--border,#ccc);border-radius:4px;font:inherit}
+.ds-input:disabled{opacity:0.6}

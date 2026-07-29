@@ -9,4 +9,14 @@
       "import": "./src/index.js"
     }
   }
+  ,
+  "scripts": {
+    "build:sprite": "node scripts/build-sprite.js",
+    "fetch-icons": "node scripts/fetch-icons.js",
+    "build": "pnpm run build:sprite"
+  }
+  ,
+  "dependencies": {
+    "material-design-icons": "^3.0.1"
+  }
 }
