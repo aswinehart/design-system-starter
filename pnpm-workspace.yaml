@@ -2,8 +2,8 @@ packages:
   - "packages/*"
 allowBuilds:
   '@bundled-es-modules/glob': true
-  esbuild: set this to true or false
-  puppeteer: set this to true or false
+  esbuild: true
+  puppeteer: true
   style-dictionary: true
 onlyBuiltDependencies:
   - "@bundled-es-modules/glob"
