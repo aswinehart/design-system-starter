@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@design-system/design-tokens": "workspace:^",
-    "@material/web": "^14.0.0"
+    "@material/web": "^2.5.0"
   },
   "devDependencies": {
     "@stencil/core": "^4.0.0",
