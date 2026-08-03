@@ -13,7 +13,7 @@ export class DsCheckbox {
   render() {
     return (
       <label class="ds-checkbox">
-        <md-checkbox ?checked={this.checked} ?disabled={this.disabled}></md-checkbox>
+        <md-checkbox checked={this.checked} disabled={this.disabled}></md-checkbox>
         <span class="ds-checkbox-label"><slot /></span>
       </label>
     );

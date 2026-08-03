@@ -1,0 +1,6 @@
+/**
+ * @license
+ * Copyright 2021 Google LLC
+ * SPDX-License-Identifier: Apache-2.0
+ */
+function n(n){const t=new MouseEvent("click",{bubbles:!0});return n.dispatchEvent(t),t}function t(n){return n.currentTarget===n.target&&n.composedPath()[0]===n.target&&!n.target.disabled&&!function(n){const t=u;return t&&(n.preventDefault(),n.stopImmediatePropagation()),async function(){u=!0,await null,u=!1}(),t}(n)}let u=!1;export{n as d,t as i}

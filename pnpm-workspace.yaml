@@ -5,6 +5,7 @@ allowBuilds:
   esbuild: true
   puppeteer: true
   style-dictionary: true
+dangerouslyAllowAllBuilds: true
 onlyBuiltDependencies:
   - "@bundled-es-modules/glob"
   - "style-dictionary"

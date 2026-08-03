@@ -1,0 +1,6 @@
+import{x as t}from"./delegate.js";
+/**
+ * @license
+ * Copyright 2020 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */const e=Symbol.for(""),r=t=>{if((null==t?void 0:t.r)===e)return null==t?void 0:t._$litStatic$},o=(t,...r)=>({_$litStatic$:r.reduce(((e,r,o)=>e+(t=>{if(void 0!==t._$litStatic$)return t._$litStatic$;throw Error(`Value passed to 'literal' function must be a 'literal' result: ${t}. Use 'unsafeStatic' to pass non-literal values, but\n            take care to ensure page security.`)})(r)+t[o+1]),t[0]),r:e}),l=new Map,i=(a=t,(t,...e)=>{const o=e.length;let i,n;const s=[],u=[];let c,f=0,d=!1;for(;f<o;){for(c=t[f];f<o&&void 0!==(n=e[f],i=r(n));)c+=i+t[++f],d=!0;f!==o&&u.push(n),s.push(c),f++}if(f===o&&s.push(t[o]),d){const r=s.join("$$lit$$");void 0===(t=l.get(r))&&(s.raw=s,l.set(r,t=s)),e=u}return a(t,...e)});var a;export{o as i,i as n}

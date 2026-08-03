@@ -1,0 +1,16 @@
+import"./p-CaxEvNAO.js";import{i as t}from"./p-BWtMJzeX.js";
+/**
+ * @license
+ * Copyright 2021 Google LLC
+ * SPDX-License-Identifier: Apache-2.0
+ */function i(t,i){!i.bubbles||t.shadowRoot&&!i.composed||i.stopPropagation();const s=Reflect.construct(i.constructor,[i.type,i]),e=t.dispatchEvent(s);return e||i.preventDefault(),e}
+/**
+ * @license
+ * Copyright 2023 Google LLC
+ * SPDX-License-Identifier: Apache-2.0
+ */const s=Symbol("createValidator"),e=Symbol("getValidityAnchor"),r=Symbol("privateValidator"),a=Symbol("privateSyncValidity"),o=Symbol("privateCustomValidationMessage");function h(i){var h;class n extends i{constructor(){super(...arguments),this[h]=""}get validity(){return this[a](),this[t].validity}get validationMessage(){return this[a](),this[t].validationMessage}get willValidate(){return this[a](),this[t].willValidate}checkValidity(){return this[a](),this[t].checkValidity()}reportValidity(){return this[a](),this[t].reportValidity()}setCustomValidity(t){this[o]=t,this[a]()}requestUpdate(t,i,s){super.requestUpdate(t,i,s),this[a]()}firstUpdated(t){super.firstUpdated(t),this[a]()}[(h=o,a)](){this[r]||(this[r]=this[s]());const{validity:i,validationMessage:a}=this[r].getValidity();this[t].setValidity({...i,customError:!!this[o]},this[o]||a,this[e]()??void 0)}[s](){throw new Error("Implement [createValidator]")}[e](){throw new Error("Implement [getValidityAnchor]")}}return n}
+/**
+ * @license
+ * Copyright 2023 Google LLC
+ * SPDX-License-Identifier: Apache-2.0
+ */class n{constructor(t){this.getCurrentState=t,this.currentValidity={validity:{},validationMessage:""}}getValidity(){const t=this.getCurrentState();if(this.prevState&&this.equals(this.prevState,t))return this.currentValidity;const{validity:i,validationMessage:s}=this.computeValidity(t);return this.prevState=this.copy(t),this.currentValidity={validationMessage:s,validity:{badInput:i.badInput,customError:i.customError,patternMismatch:i.patternMismatch,rangeOverflow:i.rangeOverflow,rangeUnderflow:i.rangeUnderflow,stepMismatch:i.stepMismatch,tooLong:i.tooLong,tooShort:i.tooShort,typeMismatch:i.typeMismatch,valueMissing:i.valueMissing}},this.currentValidity}}export{n as V,s as c,e as g,h as m,i as r}

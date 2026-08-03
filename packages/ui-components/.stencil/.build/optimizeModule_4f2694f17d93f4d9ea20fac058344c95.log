@@ -1,0 +1,95 @@
+import{r as e,h as t}from"./p-DopsaZra.js";import"@material/web/select/select.js";import{b as i,_ as s,n as l,s as a,x as r,a as o,e as n,m as d,i as m,A as p,o as c}from"./p-CaxEvNAO.js";import"./p-BvfnIXTi.js";import{i as h,n as g}from"./p-BIc8-sBS.js";
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+/**
+ * @license
+ * Copyright 2023 Google LLC
+ * SPDX-License-Identifier: Apache-2.0
+ */
+class f extends a{constructor(){super(...arguments),this.multiline=!1}render(){return r`
+      <slot name="container"></slot>
+      <slot class="non-text" name="start"></slot>
+      <div class="text">
+        <slot name="overline" @slotchange=${this.handleTextSlotChange}></slot>
+        <slot
+          class="default-slot"
+          @slotchange=${this.handleTextSlotChange}></slot>
+        <slot name="headline" @slotchange=${this.handleTextSlotChange}></slot>
+        <slot
+          name="supporting-text"
+          @slotchange=${this.handleTextSlotChange}></slot>
+      </div>
+      <slot class="non-text" name="trailing-supporting-text"></slot>
+      <slot class="non-text" name="end"></slot>
+    `}handleTextSlotChange(){let e=!1,t=0;for(const i of this.textSlots)if(y(i)&&(t+=1),t>1){e=!0;break}this.multiline=e}}function y(e){for(const t of e.assignedNodes({flatten:!0})){const e=t.nodeType===Node.ELEMENT_NODE,i=t.nodeType===Node.TEXT_NODE&&t.textContent?.match(/\S/);if(e||i)return!0}return!1}
+/**
+ * @license
+ * Copyright 2026 Google LLC
+ * SPDX-License-Identifier: Apache-2.0
+ */s([l({type:Boolean,reflect:!0})],f.prototype,"multiline",void 0),s([i({descriptor:()=>({get(){var e,t;return null!==(t=null===(e=this.renderRoot)||void 0===e?void 0:e.querySelectorAll(".text slot"))&&void 0!==t?t:[]},enumerable:!0,configurable:!0})})],f.prototype,"textSlots",void 0);const v=o`:host{color:var(--md-sys-color-on-surface, #1d1b20);font-family:var(--md-sys-typescale-body-large-font, var(--md-ref-typeface-plain, Roboto));font-size:var(--md-sys-typescale-body-large-size, 1rem);font-weight:var(--md-sys-typescale-body-large-weight, var(--md-ref-typeface-weight-regular, 400));line-height:var(--md-sys-typescale-body-large-line-height, 1.5rem);align-items:center;box-sizing:border-box;display:flex;gap:16px;min-height:56px;overflow:hidden;padding:12px 16px;position:relative;text-overflow:ellipsis}:host([multiline]){min-height:72px}[name=overline]{color:var(--md-sys-color-on-surface-variant, #49454f);font-family:var(--md-sys-typescale-label-small-font, var(--md-ref-typeface-plain, Roboto));font-size:var(--md-sys-typescale-label-small-size, 0.6875rem);font-weight:var(--md-sys-typescale-label-small-weight, var(--md-ref-typeface-weight-medium, 500));line-height:var(--md-sys-typescale-label-small-line-height, 1rem)}[name=supporting-text]{color:var(--md-sys-color-on-surface-variant, #49454f);font-family:var(--md-sys-typescale-body-medium-font, var(--md-ref-typeface-plain, Roboto));font-size:var(--md-sys-typescale-body-medium-size, 0.875rem);font-weight:var(--md-sys-typescale-body-medium-weight, var(--md-ref-typeface-weight-regular, 400));line-height:var(--md-sys-typescale-body-medium-line-height, 1.25rem)}[name=trailing-supporting-text]{color:var(--md-sys-color-on-surface-variant, #49454f);font-family:var(--md-sys-typescale-label-small-font, var(--md-ref-typeface-plain, Roboto));font-size:var(--md-sys-typescale-label-small-size, 0.6875rem);font-weight:var(--md-sys-typescale-label-small-weight, var(--md-ref-typeface-weight-medium, 500));line-height:var(--md-sys-typescale-label-small-line-height, 1rem)}[name=container]::slotted(*){inset:0;position:absolute}.default-slot{display:inline}.default-slot,.text ::slotted(*){overflow:hidden;text-overflow:ellipsis}.text{display:flex;flex:1;flex-direction:column;overflow:hidden}
+`
+/**
+ * @license
+ * Copyright 2023 Google LLC
+ * SPDX-License-Identifier: Apache-2.0
+ */;let u=class extends f{};u.styles=[v],u=s([n("md-item")],u);
+/**
+ * @license
+ * Copyright 2022 Google LLC
+ * SPDX-License-Identifier: Apache-2.0
+ */
+const b=d(a);class x extends b{constructor(){super(...arguments),this.disabled=!1,this.type="text",this.isListItem=!0,this.href="",this.target=""}get isDisabled(){return this.disabled&&"link"!==this.type}willUpdate(e){this.href&&(this.type="link"),super.willUpdate(e)}render(){return this.renderListItem(r`
+      <md-item>
+        <div slot="container">
+          ${this.renderRipple()} ${this.renderFocusRing()}
+        </div>
+        <slot name="start" slot="start"></slot>
+        <slot name="end" slot="end"></slot>
+        ${this.renderBody()}
+      </md-item>
+    `)}renderListItem(e){const t="link"===this.type;let i;switch(this.type){case"link":i=h`a`;break;case"button":i=h`button`;break;default:i=h`li`}const s=t&&this.target?this.target:p;return g`
+      <${i}
+        id="item"
+        tabindex="${this.isDisabled||"text"===this.type?-1:0}"
+        ?disabled=${this.isDisabled}
+        role="listitem"
+        aria-selected=${this.ariaSelected||p}
+        aria-checked=${this.ariaChecked||p}
+        aria-expanded=${this.ariaExpanded||p}
+        aria-haspopup=${this.ariaHasPopup||p}
+        class="list-item ${c(this.getRenderClasses())}"
+        href=${this.href||p}
+        target=${s}
+        @focus=${this.onFocus}
+      >${e}</${i}>
+    `}renderRipple(){return"text"===this.type?p:r` <md-ripple
+      part="ripple"
+      for="item"
+      ?disabled=${this.isDisabled}></md-ripple>`}renderFocusRing(){return"text"===this.type?p:r` <md-focus-ring
+      @visibility-changed=${this.onFocusRingVisibilityChanged}
+      part="focus-ring"
+      for="item"
+      inward></md-focus-ring>`}onFocusRingVisibilityChanged(e){}getRenderClasses(){return{disabled:this.isDisabled}}renderBody(){return r`
+      <slot></slot>
+      <slot name="overline" slot="overline"></slot>
+      <slot name="headline" slot="headline"></slot>
+      <slot name="supporting-text" slot="supporting-text"></slot>
+      <slot
+        name="trailing-supporting-text"
+        slot="trailing-supporting-text"></slot>
+    `}onFocus(){-1===this.tabIndex&&this.dispatchEvent(new Event("request-activation",{bubbles:!0,composed:!0}))}focus(){this.listItemRoot?.focus()}click(){this.listItemRoot?this.listItemRoot.click():super.click()}}x.shadowRootOptions={...a.shadowRootOptions,delegatesFocus:!0},s([l({type:Boolean,reflect:!0})],x.prototype,"disabled",void 0),s([l({reflect:!0})],x.prototype,"type",void 0),s([l({type:Boolean,attribute:"md-list-item",reflect:!0})],x.prototype,"isListItem",void 0),s([l()],x.prototype,"href",void 0),s([l()],x.prototype,"target",void 0),s([m(".list-item")],x.prototype,"listItemRoot",void 0);
+/**
+ * @license
+ * Copyright 2026 Google LLC
+ * SPDX-License-Identifier: Apache-2.0
+ */
+const w=o`:host{display:flex;gap:16px;-webkit-tap-highlight-color:rgba(0,0,0,0);--md-ripple-hover-color: var(--md-list-item-hover-state-layer-color, var(--md-sys-color-on-surface, #1d1b20));--md-ripple-hover-opacity: var(--md-list-item-hover-state-layer-opacity, 0.08);--md-ripple-pressed-color: var(--md-list-item-pressed-state-layer-color, var(--md-sys-color-on-surface, #1d1b20));--md-ripple-pressed-opacity: var(--md-list-item-pressed-state-layer-opacity, 0.12)}:host(:is([type=button]:not([disabled]),[type=link])){cursor:pointer}md-focus-ring{z-index:1;--md-focus-ring-shape: 8px}a,button,li{background:none;border:none;cursor:inherit;padding:0;margin:0;text-align:unset;text-decoration:none}.list-item{border-radius:inherit;display:flex;flex:1;gap:inherit;max-width:inherit;min-width:inherit;outline:none;-webkit-tap-highlight-color:rgba(0,0,0,0);width:100%}.list-item.interactive{cursor:pointer}.list-item.disabled{opacity:var(--md-list-item-disabled-opacity, 0.3);pointer-events:none}[slot=container]{pointer-events:none}md-ripple{border-radius:inherit}md-item{border-radius:inherit;flex:1;height:100%;color:var(--md-list-item-label-text-color, var(--md-sys-color-on-surface, #1d1b20));font-family:var(--md-list-item-label-text-font, var(--md-sys-typescale-body-large-font, var(--md-ref-typeface-plain, Roboto)));font-size:var(--md-list-item-label-text-size, var(--md-sys-typescale-body-large-size, 1rem));line-height:var(--md-list-item-label-text-line-height, var(--md-sys-typescale-body-large-line-height, 1.5rem));font-weight:var(--md-list-item-label-text-weight, var(--md-sys-typescale-body-large-weight, var(--md-ref-typeface-weight-regular, 400)));min-height:var(--md-list-item-one-line-container-height, 56px);padding-top:var(--md-list-item-top-space, 12px);padding-bottom:var(--md-list-item-bottom-space, 12px);padding-inline-start:var(--md-list-item-leading-space, 16px);padding-inline-end:var(--md-list-item-trailing-space, 16px);gap:inherit}md-item[multiline]{min-height:var(--md-list-item-two-line-container-height, 72px)}[slot=supporting-text]{color:var(--md-list-item-supporting-text-color, var(--md-sys-color-on-surface-variant, #49454f));font-family:var(--md-list-item-supporting-text-font, var(--md-sys-typescale-body-medium-font, var(--md-ref-typeface-plain, Roboto)));font-size:var(--md-list-item-supporting-text-size, var(--md-sys-typescale-body-medium-size, 0.875rem));line-height:var(--md-list-item-supporting-text-line-height, var(--md-sys-typescale-body-medium-line-height, 1.25rem));font-weight:var(--md-list-item-supporting-text-weight, var(--md-sys-typescale-body-medium-weight, var(--md-ref-typeface-weight-regular, 400)))}[slot=trailing-supporting-text]{color:var(--md-list-item-trailing-supporting-text-color, var(--md-sys-color-on-surface-variant, #49454f));font-family:var(--md-list-item-trailing-supporting-text-font, var(--md-sys-typescale-label-small-font, var(--md-ref-typeface-plain, Roboto)));font-size:var(--md-list-item-trailing-supporting-text-size, var(--md-sys-typescale-label-small-size, 0.6875rem));line-height:var(--md-list-item-trailing-supporting-text-line-height, var(--md-sys-typescale-label-small-line-height, 1rem));font-weight:var(--md-list-item-trailing-supporting-text-weight, var(--md-sys-typescale-label-small-weight, var(--md-ref-typeface-weight-medium, 500)))}:is([slot=start],[slot=end])::slotted(*){fill:currentColor}[slot=start]{color:var(--md-list-item-leading-icon-color, var(--md-sys-color-on-surface-variant, #49454f))}[slot=end]{color:var(--md-list-item-trailing-icon-color, var(--md-sys-color-on-surface-variant, #49454f))}@media(forced-colors: active){.disabled slot{color:GrayText}.list-item.disabled{color:GrayText;opacity:1}}
+`
+/**
+ * @license
+ * Copyright 2022 Google LLC
+ * SPDX-License-Identifier: Apache-2.0
+ */;let $=class extends x{};$.styles=[w],$=s([n("md-list-item")],$);const z=class{constructor(t){e(this,t),this.value=""}render(){return t("md-select",{key:"76e15786d5d1dac1daf820545269786d966a640b",class:"ds-select",value:this.value},t("slot",{key:"f916d1a3f64c3a030811cd2af44002513d9d5290"}))}};z.style=".ds-select{padding:0.4rem;border:1px solid var(--border,#ccc);border-radius:4px}";export{z as ds_select}

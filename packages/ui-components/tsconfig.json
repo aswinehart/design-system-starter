@@ -18,6 +18,6 @@
       "@design-system/design-tokens": ["../design-tokens/src"]
     }
   },
-  "include": ["src/**/*"],
+  "include": ["src"],
   "exclude": ["node_modules", "dist", "stencil.config.ts"]
 }
